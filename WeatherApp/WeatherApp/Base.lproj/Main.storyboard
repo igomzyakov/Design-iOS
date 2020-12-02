@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Form Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginFormController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQg-Hl-T7S">
+                                <rect key="frame" x="20" y="155" width="374" height="564"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIm-9N-dcd">
+                                        <rect key="frame" x="4" y="160" width="366" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drv-Ev-rvj">
+                                        <rect key="frame" x="159" y="242" width="56.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-gA-jHd">
+                                        <rect key="frame" x="8" y="358" width="358" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nja-Ev-cwf">
+                                        <rect key="frame" x="158" y="434" width="62" height="30"/>
+                                        <state key="normal" title="Войти"/>
+                                        <connections>
+                                            <action selector="loginButtomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w4q-Ce-f4d"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-IB-nBc">
+                                        <rect key="frame" x="139" y="389" width="96" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-VX-Q2K">
+                                        <rect key="frame" x="137" y="276" width="100" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JhN-kL-eev" firstAttribute="trailing" secondItem="MIm-9N-dcd" secondAttribute="trailing" constant="4" id="2lH-ba-iUb"/>
+                                    <constraint firstItem="Drv-Ev-rvj" firstAttribute="centerX" secondItem="KN1-VX-Q2K" secondAttribute="centerX" id="2lk-2V-Zl8"/>
+                                    <constraint firstItem="MIm-9N-dcd" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="3tP-go-Dgd"/>
+                                    <constraint firstItem="KN1-VX-Q2K" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="73b-vS-ygj"/>
+                                    <constraint firstItem="8JF-gA-jHd" firstAttribute="centerX" secondItem="fdY-IB-nBc" secondAttribute="centerX" id="ERL-qI-h8F"/>
+                                    <constraint firstItem="8JF-gA-jHd" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="G5n-7V-PVd"/>
+                                    <constraint firstItem="nja-Ev-cwf" firstAttribute="leading" secondItem="JhN-kL-eev" secondAttribute="leading" constant="158" id="I5s-St-LIO"/>
+                                    <constraint firstItem="8JF-gA-jHd" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="KVF-Ne-vs9"/>
+                                    <constraint firstItem="KN1-VX-Q2K" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="MqL-FH-Z8y"/>
+                                    <constraint firstAttribute="trailing" secondItem="fdY-IB-nBc" secondAttribute="trailing" constant="139" id="NTD-ed-CvD"/>
+                                    <constraint firstAttribute="bottom" secondItem="nja-Ev-cwf" secondAttribute="bottom" constant="100" id="Rve-TA-tWn"/>
+                                    <constraint firstItem="fdY-IB-nBc" firstAttribute="top" secondItem="8JF-gA-jHd" secondAttribute="bottom" constant="7" id="UYv-w5-Tfc"/>
+                                    <constraint firstItem="MIm-9N-dcd" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="WZY-4q-Zeb"/>
+                                    <constraint firstAttribute="trailing" secondItem="KN1-VX-Q2K" secondAttribute="trailing" constant="137" id="Ydg-L2-vuE"/>
+                                    <constraint firstItem="KN1-VX-Q2K" firstAttribute="top" secondItem="Drv-Ev-rvj" secondAttribute="bottom" constant="10" id="Yu8-MU-QQI"/>
+                                    <constraint firstItem="MIm-9N-dcd" firstAttribute="centerX" secondItem="Drv-Ev-rvj" secondAttribute="centerX" id="ZdZ-uP-yZb"/>
+                                    <constraint firstItem="Drv-Ev-rvj" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="aZQ-5c-Kkw"/>
+                                    <constraint firstItem="nja-Ev-cwf" firstAttribute="top" secondItem="fdY-IB-nBc" secondAttribute="bottom" constant="11" id="cBl-g3-nVf"/>
+                                    <constraint firstItem="fdY-IB-nBc" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="dgj-9y-NU6"/>
+                                    <constraint firstAttribute="trailing" secondItem="8JF-gA-jHd" secondAttribute="trailing" constant="8" id="fG0-US-OfJ"/>
+                                    <constraint firstItem="fdY-IB-nBc" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="fWI-aG-fBY"/>
+                                    <constraint firstItem="Drv-Ev-rvj" firstAttribute="top" secondItem="MIm-9N-dcd" secondAttribute="bottom" constant="46" id="hVV-7H-rlI"/>
+                                    <constraint firstItem="MIm-9N-dcd" firstAttribute="top" secondItem="MQg-Hl-T7S" secondAttribute="top" constant="160" id="hbJ-r2-6Vt"/>
+                                    <constraint firstItem="nja-Ev-cwf" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" constant="2" id="jJe-Kf-IUE"/>
+                                    <constraint firstAttribute="trailing" secondItem="MIm-9N-dcd" secondAttribute="trailing" constant="4" id="lNH-9Z-mOW"/>
+                                    <constraint firstItem="Drv-Ev-rvj" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="pOt-Nc-glT"/>
+                                    <constraint firstItem="8JF-gA-jHd" firstAttribute="top" secondItem="KN1-VX-Q2K" secondAttribute="bottom" constant="48" id="qaU-CL-sHd"/>
+                                    <constraint firstItem="KN1-VX-Q2K" firstAttribute="centerX" secondItem="MQg-Hl-T7S" secondAttribute="centerX" id="tHX-oo-OzT"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="iis-QR-xk3"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="JhN-kL-eev"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MQg-Hl-T7S" secondAttribute="bottom" constant="143" id="0TD-Y5-Qj1"/>
+                            <constraint firstItem="MQg-Hl-T7S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VYS-CV-1hd"/>
+                            <constraint firstItem="MQg-Hl-T7S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W6Y-Ek-UzP"/>
+                            <constraint firstItem="MQg-Hl-T7S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="ouE-O5-JmA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UIScrollView" destination="MQg-Hl-T7S" id="juv-ye-rwS"/>
+                        <outlet property="loginlput" destination="KN1-VX-Q2K" id="OJO-p7-DfX"/>
+                        <outlet property="passwordInput" destination="fdY-IB-nBc" id="Xzv-HS-I3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
